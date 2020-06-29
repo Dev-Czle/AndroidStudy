@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/scene_01"
+    app:layoutDescription="@xml/scene_04"
     app:showPaths="true"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/button"
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:background="@color/colorAccent" />
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_launcher_background"
+        app:altSrc="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
